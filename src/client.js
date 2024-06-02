@@ -21,7 +21,6 @@ import reducer from './reducer';
 
 // Create the store
 let _finalCreateStore;
-
 if (__DEVELOPMENT__) {
   _finalCreateStore = compose(
     applyMiddleware(thunk, routerMiddleware(browserHistory), createLogger()),

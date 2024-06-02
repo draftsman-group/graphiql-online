@@ -209,11 +209,6 @@ class ApiRequest extends Component {
                 />
               </div>
             </div>
-            <div className={'col-xs-1 ' + styles.padd_remove}>
-              <button onClick={this.changeEndpoint.bind(this)} className={styles.changeEndpoint + ' btn btn-sm btn-small btn-info'}>
-                Change Endpoint
-              </button>
-            </div>
             <div className={styles.stickySeparator} />
           </div>
         </CollapsibleToggle>

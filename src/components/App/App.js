@@ -12,6 +12,7 @@ class App extends Component {
     const className = document.getElementById('content').className;
     document.getElementById('content').className = className + ' show';
     document.getElementById('loading').style.display = 'none';
+    console.log("Hello World!");
   }
 
   render() {
@@ -26,7 +27,6 @@ class App extends Component {
       connectionFailed,
       dispatch,
     } = this.props;
-
     return (
       <ErrorBoundary dispatch={dispatch}>
         <div>

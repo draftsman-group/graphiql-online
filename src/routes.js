@@ -9,7 +9,7 @@ import generatedApiExplorer from './components/Services/ApiExplorer/ApiExplorerG
 
 import generatedVoyagerConnector from './components/Services/VoyagerView/VoyagerView';
 
-import generatedLoginConnector from './components/Login/Login';
+//import generatedLoginConnector from './components/Login/Login';
 
 
 const routes = store => {
@@ -17,8 +17,9 @@ const routes = store => {
   return (
     <Route path="/" component={App}>
       <Route path="">
-        <IndexRoute component={generatedLoginConnector(connect)} />
+        <IndexRoute component={generatedApiExplorer(connect)} />
       </Route>
+      <Route path="/appsync" component={generatedApiExplorer(connect)} />
       <Route path="/graphiql" component={generatedApiExplorer(connect)} />
       <Route
         path="voyager-view"
